@@ -1,4 +1,67 @@
-{
+import 'isomorphic-fetch';
+var fetchMock = require('fetch-mock');
+import React from 'react';
+import BroadbandGrid from './broadbandGrid-component';
+import renderer from 'react-test-renderer';
+
+test('GIVEN results WHEN filtering by Broadband THEN show the 3 broadband only deals', () => {
+
+  const component = renderer.create(
+    <BroadbandGrid deals={mockDeals.deals}
+     filters = {{ Broadband: true, TV: false, Mobile: false, Speed: 'any'} }/>
+  );
+  
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+})
+
+test('GIVEN results WHEN filtering by Broadband AND Tv THEN show the 2 deals for broadband and Tv only', () => {
+
+  const component = renderer.create(
+    <BroadbandGrid deals={mockDeals.deals} 
+            filters = {{ Broadband: true, TV: true, Mobile: false, Speed: 'any' }}/>
+  );
+  
+
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+})
+
+test('GIVEN results WHEN filtering by Broadband AND Mobile THEN show the single deal for broadband and Mobile only', () => {
+
+  const component = renderer.create(
+    <BroadbandGrid deals={mockDeals.deals}
+    filters = {{ Broadband: true, TV: false, Mobile: true, Speed: 'any' }} />
+  );
+  
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+})
+
+test('GIVEN results WHEN filtering by Mobile, Broadband, TV selected AND Mobile Data 5GB THEN 0 results', () => {
+
+  const component = renderer.create(
+    <BroadbandGrid deals={mockDeals.deals} 
+    filters = {{ Broadband: true, TV: true, Mobile: true, Speed: '5' }}/>
+  );
+  
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+})
+
+test('GIVEN results WHEN filtering by Broadband AND Speed 52MB THEN 1 result present', () => {
+
+  const component = renderer.create(
+    <BroadbandGrid deals={mockDeals.deals} 
+    filters = {{ Broadband: true, TV: false, Mobile: false, Speed: '52' }}/>
+  );
+  
+  let tree = component.toJSON();
+  expect(tree).toMatchSnapshot();
+})
+
+
+var mockDeals = {
    "deals":[
       {
          "title":"Unlimited Broadband & Weekend Calls",
@@ -730,3 +793,4 @@
       }
    ]
 }
+

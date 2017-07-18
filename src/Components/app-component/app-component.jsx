@@ -1,4 +1,6 @@
 import React from 'react';
+import BroadbandGrid from '../broadbandGrid/broadbandGrid-component.jsx';
+
 var service = function () {
   return {
     fetchDeals: () => {
@@ -13,83 +15,19 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 'deals': [] };
-    service.fetchDeals().then(deals => {
+      service.fetchDeals().then(deals => {
       this.setState({ 'deals': deals })
-    })
-  }
+    })    
+  }  
+
   render() {
-    let dealsRows = this.state.deals.map((deal) =>
-      <tr>
-        <td style={{maxWidth:'250px'}} >{deal.title}</td>
-        <td>{deal.contractLength + ' months'}</td>
-        <td>
-          <span>{deal.speed.label}</span><br />
-          <span>{deal.usage.label}</span>
-        </td>
-        <td>
-          <img src={deal.offer.smallLogo} title={deal.offer.title} alt={deal.offer.title} />
-        </td>
-        <td>
-          {deal.tvProduct ?
-            deal.popularChannels.map(channel =>
-              <div><img src={channel.logo} title={channel.name} alt={channel.name} /></div>
-            )
-            : (
-              <span>N/A</span>
-            )}
-        </td>
-        <td>
-          {deal.mobile ?
-            (<div>
-              Data: {deal.mobile.data.label}<br/>
-              Minuites: {deal.mobile.minutes.label}<br/>
-              Text: {deal.mobile.texts.label}<br/>
-              Connection: {deal.mobile.connectionType.label}
-            </div>) 
-            : (<span>N/A</span>)
-          }
-        </td>
-        <td>£{deal.prices[0].totalContractCost}</td>
-      </tr>
-    );
     return (
       <div style={{ height: '100%' }}>
         <header style={{ backgroundColor: '#dedede', height: '80px' }}>
           <a href="/" id="logo" style={{ marginLeft: '100px' }}></a>
         </header>
-        <main style={{ display: 'flex', height: 'calc(100% - 100px)', margin: '0 100px' }}>
-          <div style={{height: '100%', width: '175px', backgroundColor: '#dedede', height: '100%' }}>
-            <ul>
-              <li><input type="checkbox" /><lable>Broadband</lable></li>
-              <li><input type="checkbox" /><lable>TV</lable></li>
-              <li><input type="checkbox" /><lable>Mobile</lable></li>
-            </ul>
-            <div style={{ marginLeft: '5px' }}>
-              <label>Speed</label><br />
-              <select>
-                <option value="Any" defaultChecked>Any</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <table id="grid-deals">
-              <thead>
-                <tr>
-                  <th>About</th>
-                  <th>Contract Length</th>
-                  <th>Speed/Usage</th>
-                  <th>Offer</th>
-                  <th>TV</th>
-                  <th>Mobile</th>
-                  <th>Cost</th>
-                </tr>
-              </thead>
-              <tbody>
-                {dealsRows}
-              </tbody>
-            </table>
-          </div>
-        </main>
+        <BroadbandGrid deals={this.state.deals} 
+            filters={{ Broadband: true, TV: false, Mobile: false, Speed: 'any' }} />
         {/* <svg
           height="32px"
           version="1.1"

@@ -1,0 +1,1025 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GIVEN results WHEN filtering by Broadband AND Mobile THEN show the single deal for broadband and Mobile only 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "height": "calc(100% - 100px)",
+      "marginLeft": "100px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#dedede",
+        "flexBasis": "175px",
+        "flexShrink": "0",
+        "height": "100%",
+      }
+    }
+  >
+    <ul>
+      <li>
+        <input
+          defaultChecked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          Broadband
+        </lable>
+      </li>
+      <li>
+        <input
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          TV
+        </lable>
+      </li>
+      <li>
+        <input
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          Mobile
+        </lable>
+      </li>
+    </ul>
+    <div
+      style={
+        Object {
+          "marginLeft": "5px",
+        }
+      }
+    >
+      <label>
+        Speed
+      </label>
+      <br />
+      <select
+        onChange={[Function]}
+      >
+        <option
+          defaultChecked={true}
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="52"
+        >
+          52 MB
+        </option>
+        <option
+          value="17"
+        >
+          17 MB
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "flexGrow": "1",
+      }
+    }
+  >
+    <table
+      id="grid-deals"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <thead>
+        <tr>
+          <th>
+            About
+          </th>
+          <th>
+            Contract Length
+          </th>
+          <th>
+            Speed/Usage
+          </th>
+          <th>
+            Offer
+          </th>
+          <th>
+            TV
+          </th>
+          <th>
+            Mobile
+          </th>
+          <th>
+            Cost
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            style={
+              Object {
+                "maxWidth": "250px",
+              }
+            }
+          >
+            Unlimited Broadband + Weekend Calls + BT Mobile + BT Sport Pack
+          </td>
+          <td>
+            12 months
+          </td>
+          <td>
+            <span>
+              17
+               MB
+            </span>
+            <br />
+            <span>
+              Truly Unlimited
+            </span>
+          </td>
+          <td>
+            <img
+              alt="£100 BT Reward Card - see BT's website for further details"
+              src="https://bucket.cdndtl.co.uk/bc/ICONS_70x70/BT_100RewardCard.png"
+              title="£100 BT Reward Card - see BT's website for further details"
+            />
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            <div>
+              Data: 
+              5 GB
+              <br />
+              Minuites: 
+              500
+              <br />
+              Text: 
+              Unlimited texts
+              <br />
+              Connection: 
+              4G
+            </div>
+          </td>
+          <td>
+            £
+            429.87
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`GIVEN results WHEN filtering by Broadband AND Speed 52MB THEN 1 result present 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "height": "calc(100% - 100px)",
+      "marginLeft": "100px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#dedede",
+        "flexBasis": "175px",
+        "flexShrink": "0",
+        "height": "100%",
+      }
+    }
+  >
+    <ul>
+      <li>
+        <input
+          defaultChecked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          Broadband
+        </lable>
+      </li>
+      <li>
+        <input
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          TV
+        </lable>
+      </li>
+      <li>
+        <input
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          Mobile
+        </lable>
+      </li>
+    </ul>
+    <div
+      style={
+        Object {
+          "marginLeft": "5px",
+        }
+      }
+    >
+      <label>
+        Speed
+      </label>
+      <br />
+      <select
+        onChange={[Function]}
+      >
+        <option
+          defaultChecked={true}
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="52"
+        >
+          52 MB
+        </option>
+        <option
+          value="17"
+        >
+          17 MB
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "flexGrow": "1",
+      }
+    }
+  >
+    <table
+      id="grid-deals"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <thead>
+        <tr>
+          <th>
+            About
+          </th>
+          <th>
+            Contract Length
+          </th>
+          <th>
+            Speed/Usage
+          </th>
+          <th>
+            Offer
+          </th>
+          <th>
+            TV
+          </th>
+          <th>
+            Mobile
+          </th>
+          <th>
+            Cost
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            style={
+              Object {
+                "maxWidth": "250px",
+              }
+            }
+          >
+            Broadband Premium + Anytime Calls
+          </td>
+          <td>
+            18 months
+          </td>
+          <td>
+            <span>
+              52
+               MB
+            </span>
+            <br />
+            <span>
+              Truly Unlimited
+            </span>
+          </td>
+          <td>
+            <img
+              alt="Unlimited Broadband"
+              src="https://bucket.cdndtl.co.uk/bc/ICONS_70x70/13102016ICONS/Icon-PO-UnlimitedBB.png"
+              title="Unlimited Broadband"
+            />
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            £
+            492.77
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`GIVEN results WHEN filtering by Broadband AND Tv THEN show the 2 deals for broadband and Tv only 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "height": "calc(100% - 100px)",
+      "marginLeft": "100px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#dedede",
+        "flexBasis": "175px",
+        "flexShrink": "0",
+        "height": "100%",
+      }
+    }
+  >
+    <ul>
+      <li>
+        <input
+          defaultChecked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          Broadband
+        </lable>
+      </li>
+      <li>
+        <input
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          TV
+        </lable>
+      </li>
+      <li>
+        <input
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          Mobile
+        </lable>
+      </li>
+    </ul>
+    <div
+      style={
+        Object {
+          "marginLeft": "5px",
+        }
+      }
+    >
+      <label>
+        Speed
+      </label>
+      <br />
+      <select
+        onChange={[Function]}
+      >
+        <option
+          defaultChecked={true}
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="52"
+        >
+          52 MB
+        </option>
+        <option
+          value="17"
+        >
+          17 MB
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "flexGrow": "1",
+      }
+    }
+  >
+    <table
+      id="grid-deals"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <thead>
+        <tr>
+          <th>
+            About
+          </th>
+          <th>
+            Contract Length
+          </th>
+          <th>
+            Speed/Usage
+          </th>
+          <th>
+            Offer
+          </th>
+          <th>
+            TV
+          </th>
+          <th>
+            Mobile
+          </th>
+          <th>
+            Cost
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            style={
+              Object {
+                "maxWidth": "250px",
+              }
+            }
+          >
+            Total Entertainment + Unlimited Infinity 2 + Weekend Calls
+          </td>
+          <td>
+            12 months
+          </td>
+          <td>
+            <span>
+              76
+               MB
+            </span>
+            <br />
+            <span>
+              Truly Unlimited
+            </span>
+          </td>
+          <td>
+            <img
+              alt="£150 BT Reward Card - see BT's website for further details"
+              src="https://bucket.cdndtl.co.uk/bc/ICONS_70x70/BT_150reward.png"
+              title="£150 BT Reward Card - see BT's website for further details"
+            />
+          </td>
+          <td>
+            <div>
+              <img
+                alt="BT Sport 1"
+                src="https://bucket.cdndtl.co.uk/Europe/England/priority-channels/bt-sport-1.png"
+                title="BT Sport 1"
+              />
+            </div>
+            <div>
+              <img
+                alt="Film4"
+                src="https://bucket.cdndtl.co.uk/Europe/England/priority-channels/film4.png"
+                title="Film4"
+              />
+            </div>
+            <div>
+              <img
+                alt="E4"
+                src="https://bucket.cdndtl.co.uk/Europe/England/priority-channels/e4.png"
+                title="E4"
+              />
+            </div>
+            <div>
+              <img
+                alt="Dave"
+                src="https://bucket.cdndtl.co.uk/Europe/England/priority-channels/dave.png"
+                title="Dave"
+              />
+            </div>
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            £
+            825.87
+          </td>
+        </tr>
+        <tr>
+          <td
+            style={
+              Object {
+                "maxWidth": "250px",
+              }
+            }
+          >
+            Total Entertainment + Unlimited Infinity 2 + Weekend Calls
+          </td>
+          <td>
+            12 months
+          </td>
+          <td>
+            <span>
+              76
+               MB
+            </span>
+            <br />
+            <span>
+              Truly Unlimited
+            </span>
+          </td>
+          <td>
+            <img
+              alt="£150 BT Reward Card - see BT's website for further details"
+              src="https://bucket.cdndtl.co.uk/bc/ICONS_70x70/BT_150reward.png"
+              title="£150 BT Reward Card - see BT's website for further details"
+            />
+          </td>
+          <td>
+            <div>
+              <img
+                alt="BT Sport 1"
+                src="https://bucket.cdndtl.co.uk/Europe/England/priority-channels/bt-sport-1.png"
+                title="BT Sport 1"
+              />
+            </div>
+            <div>
+              <img
+                alt="Film4"
+                src="https://bucket.cdndtl.co.uk/Europe/England/priority-channels/film4.png"
+                title="Film4"
+              />
+            </div>
+            <div>
+              <img
+                alt="E4"
+                src="https://bucket.cdndtl.co.uk/Europe/England/priority-channels/e4.png"
+                title="E4"
+              />
+            </div>
+            <div>
+              <img
+                alt="Dave"
+                src="https://bucket.cdndtl.co.uk/Europe/England/priority-channels/dave.png"
+                title="Dave"
+              />
+            </div>
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            £
+            825.87
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`GIVEN results WHEN filtering by Broadband THEN show the 3 broadband only deals 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "height": "calc(100% - 100px)",
+      "marginLeft": "100px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#dedede",
+        "flexBasis": "175px",
+        "flexShrink": "0",
+        "height": "100%",
+      }
+    }
+  >
+    <ul>
+      <li>
+        <input
+          defaultChecked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          Broadband
+        </lable>
+      </li>
+      <li>
+        <input
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          TV
+        </lable>
+      </li>
+      <li>
+        <input
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          Mobile
+        </lable>
+      </li>
+    </ul>
+    <div
+      style={
+        Object {
+          "marginLeft": "5px",
+        }
+      }
+    >
+      <label>
+        Speed
+      </label>
+      <br />
+      <select
+        onChange={[Function]}
+      >
+        <option
+          defaultChecked={true}
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="52"
+        >
+          52 MB
+        </option>
+        <option
+          value="17"
+        >
+          17 MB
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "flexGrow": "1",
+      }
+    }
+  >
+    <table
+      id="grid-deals"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <thead>
+        <tr>
+          <th>
+            About
+          </th>
+          <th>
+            Contract Length
+          </th>
+          <th>
+            Speed/Usage
+          </th>
+          <th>
+            Offer
+          </th>
+          <th>
+            TV
+          </th>
+          <th>
+            Mobile
+          </th>
+          <th>
+            Cost
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            style={
+              Object {
+                "maxWidth": "250px",
+              }
+            }
+          >
+            Unlimited Broadband & Weekend Calls
+          </td>
+          <td>
+            18 months
+          </td>
+          <td>
+            <span>
+              17
+               MB
+            </span>
+            <br />
+            <span>
+              Unlimited
+            </span>
+          </td>
+          <td>
+            <img
+              alt="£50 cancellation credit"
+              src="https://bucket.cdndtl.co.uk/bc/ICONS_70x70/13102016ICONS/Icon-EE-50Cancellation.png"
+              title="£50 cancellation credit"
+            />
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            £
+            358
+          </td>
+        </tr>
+        <tr>
+          <td
+            style={
+              Object {
+                "maxWidth": "250px",
+              }
+            }
+          >
+            Broadband Premium + Anytime Calls
+          </td>
+          <td>
+            18 months
+          </td>
+          <td>
+            <span>
+              52
+               MB
+            </span>
+            <br />
+            <span>
+              Truly Unlimited
+            </span>
+          </td>
+          <td>
+            <img
+              alt="Unlimited Broadband"
+              src="https://bucket.cdndtl.co.uk/bc/ICONS_70x70/13102016ICONS/Icon-PO-UnlimitedBB.png"
+              title="Unlimited Broadband"
+            />
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            £
+            492.77
+          </td>
+        </tr>
+        <tr>
+          <td
+            style={
+              Object {
+                "maxWidth": "250px",
+              }
+            }
+          >
+            Broadband Premium + Weekend Calls
+          </td>
+          <td>
+            18 months
+          </td>
+          <td>
+            <span>
+              17
+               MB
+            </span>
+            <br />
+            <span>
+              Truly Unlimited
+            </span>
+          </td>
+          <td>
+            <img
+              alt="Unlimited Broadband"
+              src="https://bucket.cdndtl.co.uk/bc/ICONS_70x70/13102016ICONS/Icon-PO-UnlimitedBB.png"
+              title="Unlimited Broadband"
+            />
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            <span>
+              N/A
+            </span>
+          </td>
+          <td>
+            £
+            366.77
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`GIVEN results WHEN filtering by Mobile, Broadband, TV selected AND Mobile Data 5GB THEN 0 results 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "height": "calc(100% - 100px)",
+      "marginLeft": "100px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#dedede",
+        "flexBasis": "175px",
+        "flexShrink": "0",
+        "height": "100%",
+      }
+    }
+  >
+    <ul>
+      <li>
+        <input
+          defaultChecked={true}
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          Broadband
+        </lable>
+      </li>
+      <li>
+        <input
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          TV
+        </lable>
+      </li>
+      <li>
+        <input
+          onChange={[Function]}
+          type="checkbox"
+        />
+        <lable>
+          Mobile
+        </lable>
+      </li>
+    </ul>
+    <div
+      style={
+        Object {
+          "marginLeft": "5px",
+        }
+      }
+    >
+      <label>
+        Speed
+      </label>
+      <br />
+      <select
+        onChange={[Function]}
+      >
+        <option
+          defaultChecked={true}
+          value="any"
+        >
+          Any
+        </option>
+        <option
+          value="52"
+        >
+          52 MB
+        </option>
+        <option
+          value="17"
+        >
+          17 MB
+        </option>
+      </select>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "flexGrow": "1",
+      }
+    }
+  >
+    <table
+      id="grid-deals"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <thead>
+        <tr>
+          <th>
+            About
+          </th>
+          <th>
+            Contract Length
+          </th>
+          <th>
+            Speed/Usage
+          </th>
+          <th>
+            Offer
+          </th>
+          <th>
+            TV
+          </th>
+          <th>
+            Mobile
+          </th>
+          <th>
+            Cost
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;
