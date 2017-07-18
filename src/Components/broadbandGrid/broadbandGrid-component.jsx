@@ -1,7 +1,7 @@
 import React from 'react';
 import applyFilters from '../../Filters/applyFilters';
 import PropTypes from 'prop-types';
-
+import FiltersPanel from '../shared-components/filtersPanel-component.jsx'
 export default class BroadbandGrid extends React.Component {
   constructor(props) {
     super(props);
@@ -108,30 +108,12 @@ export default class BroadbandGrid extends React.Component {
 
     return (
       <div style={{ display: 'flex', height: 'calc(100% - 100px)', marginLeft: '100px' }}>
-        <div style={{ height: '100%', flexBasis: '175px', flexShrink: '0', backgroundColor: '#dedede', height: '100%' }}>
-          <ul>
-            <li>
-              <input type="checkbox" defaultChecked onChange={this.handleBroadbandChange} />
-              <lable>Broadband</lable>
-            </li>
-            <li>
-              <input type="checkbox" onChange={this.handleTVChange} />
-              <lable>TV</lable>
-            </li>
-            <li>
-              <input type="checkbox" onChange={this.handleMobileChange} />
-              <lable>Mobile</lable>
-            </li>
-          </ul>
-          <div style={{ marginLeft: '5px' }}>
-            <label>Speed</label><br />
-            <select onChange={this.handleSpeedChange}>
-              <option value="any" defaultChecked>Any</option>
-              <option value="52">52 MB</option>
-              <option value="17">17 MB</option>
-            </select>
-          </div>
-        </div>
+        <FiltersPanel style={{flexBasis: '175px', flexShrink: '0', backgroundColor: '#dedede'}}  
+                      handleBroadbandChange={this.handleBroadbandChange} 
+                      handleMobileChange = {this.handleMobileChange} 
+                      handleSpeedChange = {this.handleSpeedChange}
+                      handleTVChange = {this.handleTVChange} />
+
         <div style={{ flexGrow: '1' }}>
           <table id="grid-deals" style={{ width: '100%' }}>
             <thead>
