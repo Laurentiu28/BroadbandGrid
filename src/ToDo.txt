@@ -1,0 +1,6 @@
+Next steps to do to complete the exercise;
+
+1)Implement the List component to show the deals for the Mobile view;
+2)Refactor List and Grid to use more shared componets Ex: Speed, BroadBand,TV,Mobile,price components.
+3)Improve the css of the project/Make it compatible with more browsers
+4)Increase spanshot testing for components
