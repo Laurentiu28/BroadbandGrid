@@ -30,6 +30,7 @@ export default class FiltersPanel extends React.Component {
                         <option value="any" defaultChecked>Any</option>
                         <option value="52">52 MB</option>
                         <option value="17">17 MB</option>
+                        <option value="5000">5 GB</option>
                     </select>
                 </div>
             </div>
