@@ -11,11 +11,63 @@ html {
 body, #root {
     height: 100%;
 }
-#grid-deals {
-    table-layout: fixed;
-    border-spacing: 10px;
+
+/* Mobile First */
+
+.grid {
+    display: none;
 }
 
-#grid-deals td {
-    text-align: center;
+.filter-panel {
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #333;
+    width:175px;
+    height: 100%;
+    color:white;
+}
+
+.menu-icon{
+    position: fixed;
+    top:10px;
+    right:10px;
+}
+
+.list {
+    display: block;
+}
+
+@media only screen and (min-width: 800px) {
+    /* For Desktop only: */
+    .grid {
+        display: block;
+    }
+
+    .filter-panel {
+        display: block;
+        position: static;
+        flex-basis: 175px;
+        flex-shrink: 0; 
+        background-color: #dedede;
+        color:black;
+    } 
+
+    .grid-deals {
+        table-layout: fixed;
+        border-spacing: 10px;
+    }
+
+    .grid-deals td {
+        text-align: center;
+    }
+
+    .menu-icon {
+        position: static;
+        display: none;
+    }
+    .list {
+        display: none;
+    }
 }

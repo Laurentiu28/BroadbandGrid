@@ -1,8 +1,13 @@
 import React from 'react';
+import $ from 'jquery'; 
 import applyFilters from '../../Filters/applyFilters';
 import PropTypes from 'prop-types';
-import FiltersPanel from '../shared-components/filtersPanel-component.jsx'
-export default class BroadbandGrid extends React.Component {
+import FiltersPanel from '../shared-components/filtersPanel-component.jsx';
+import Grid from '../grid-component/grid-component.jsx';
+import MenuIcon from '../shared-components/menuIcon-component.jsx';
+import List from '../list-component/list-component.jsx';
+
+export default class Broadband extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,7 +24,7 @@ export default class BroadbandGrid extends React.Component {
     this.handleTVChange = this.handleTVChange.bind(this);
     this.handleSpeedChange = this.handleSpeedChange.bind(this);
   }
-  _filteredDeals(deals, filters) {
+  _getfilteredDeals(deals, filters) {
     return deals.filter(deal => applyFilters(deal, filters));
   }
 
@@ -68,76 +73,30 @@ export default class BroadbandGrid extends React.Component {
     }));
   }
 
+  handleMenuIconClick(event){
+    $('.filter-panel').toggle();
+  }
+
   render() {
-    let dealsRows = this._filteredDeals(this.props.deals, this.state.filters).map((deal) =>
-      <tr key={deal.id}>
-        <td style={{ maxWidth: '250px' }} >{deal.title}</td>
-        <td>{deal.contractLength + ' months'}</td>
-        <td>
-          <span>{deal.speed.label} MB</span><br />
-          <span>{deal.usage.label}</span>
-        </td>
-        <td>
-          <img src={deal.offer.smallLogo} title={deal.offer.title} alt={deal.offer.title} />
-        </td>
-        <td>
-          {deal.productTypes.includes('TV') ?
-            deal.popularChannels.map(channel =>
-              <div key={channel.name}>
-                <img src={channel.logo} title={channel.name} alt={channel.name} />
-              </div>
-            )
-            : (
-              <span>N/A</span>
-            )}
-        </td>
-        <td>
-          {deal.productTypes.includes('Mobile') ?
-            (<div>
-              Data: {deal.mobile.data.label}<br />
-              Minuites: {deal.mobile.minutes.label}<br />
-              Text: {deal.mobile.texts.label}<br />
-              Connection: {deal.mobile.connectionType.label}
-            </div>)
-            : (<span>N/A</span>)
-          }
-        </td>
-        <td>£{deal.prices[0].totalContractCost}</td>
-      </tr>
-    );
+    let filteredDeals = this._getfilteredDeals(this.props.deals, this.state.filters);
 
     return (
-      <div style={{ display: 'flex', height: 'calc(100% - 100px)', marginLeft: '100px' }}>
-        <FiltersPanel style={{flexBasis: '175px', flexShrink: '0', backgroundColor: '#dedede'}}  
+      <div id="#main" style={{ display: 'flex', height: 'calc(100% - 100px)', marginLeft: '100px' }}>
+        <FiltersPanel style={{}}  
                       handleBroadbandChange={this.handleBroadbandChange} 
                       handleMobileChange = {this.handleMobileChange} 
                       handleSpeedChange = {this.handleSpeedChange}
                       handleTVChange = {this.handleTVChange} />
 
-        <div style={{ flexGrow: '1' }}>
-          <table id="grid-deals" style={{ width: '100%' }}>
-            <thead>
-              <tr>
-                <th>About</th>
-                <th>Contract Length</th>
-                <th>Speed/Usage</th>
-                <th>Offer</th>
-                <th>TV</th>
-                <th>Mobile</th>
-                <th>Cost</th>
-              </tr>
-            </thead>
-            <tbody>
-              {dealsRows}
-            </tbody>
-          </table>
-        </div>
+        <Grid deals={filteredDeals} />
+        <MenuIcon handleClick={this.handleMenuIconClick} />
+        <List />
       </div>
     );
   }
 }
 
-BroadbandGrid.propTypes = {
+Broadband.propTypes = {
   deals: PropTypes.array,
   filters: PropTypes.shape({
     Broadband: PropTypes.bool,

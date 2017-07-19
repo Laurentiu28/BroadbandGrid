@@ -2,6 +2,7 @@
 
 exports[`GIVEN results WHEN filtering by Broadband AND Mobile THEN show the single deal for broadband and Mobile only 1`] = `
 <div
+  id="#main"
   style={
     Object {
       "display": "flex",
@@ -11,14 +12,7 @@ exports[`GIVEN results WHEN filtering by Broadband AND Mobile THEN show the sing
   }
 >
   <div
-    style={
-      Object {
-        "backgroundColor": "#dedede",
-        "flexBasis": "175px",
-        "flexShrink": "0",
-        "height": "100%",
-      }
-    }
+    className="filter-panel"
   >
     <ul>
       <li>
@@ -84,6 +78,7 @@ exports[`GIVEN results WHEN filtering by Broadband AND Mobile THEN show the sing
     </div>
   </div>
   <div
+    className="grid"
     style={
       Object {
         "flexGrow": "1",
@@ -91,7 +86,7 @@ exports[`GIVEN results WHEN filtering by Broadband AND Mobile THEN show the sing
     }
   >
     <table
-      id="grid-deals"
+      className="grid-deals"
       style={
         Object {
           "width": "100%",
@@ -182,11 +177,35 @@ exports[`GIVEN results WHEN filtering by Broadband AND Mobile THEN show the sing
       </tbody>
     </table>
   </div>
+  <div
+    className="menu-icon"
+    onClick={[Function]}
+  >
+    <svg
+      height="32px"
+      version="1.1"
+      viewBox="0 0 32 32"
+      width="32px"
+      xmlSpace="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+      />
+    </svg>
+  </div>
+  <div
+    className="list"
+  >
+    To Do. Implement the list display for the Mobile View.
+  </div>
 </div>
 `;
 
 exports[`GIVEN results WHEN filtering by Broadband AND Speed 52MB THEN 1 result present 1`] = `
 <div
+  id="#main"
   style={
     Object {
       "display": "flex",
@@ -196,14 +215,7 @@ exports[`GIVEN results WHEN filtering by Broadband AND Speed 52MB THEN 1 result 
   }
 >
   <div
-    style={
-      Object {
-        "backgroundColor": "#dedede",
-        "flexBasis": "175px",
-        "flexShrink": "0",
-        "height": "100%",
-      }
-    }
+    className="filter-panel"
   >
     <ul>
       <li>
@@ -269,6 +281,7 @@ exports[`GIVEN results WHEN filtering by Broadband AND Speed 52MB THEN 1 result 
     </div>
   </div>
   <div
+    className="grid"
     style={
       Object {
         "flexGrow": "1",
@@ -276,7 +289,7 @@ exports[`GIVEN results WHEN filtering by Broadband AND Speed 52MB THEN 1 result 
     }
   >
     <table
-      id="grid-deals"
+      className="grid-deals"
       style={
         Object {
           "width": "100%",
@@ -357,11 +370,35 @@ exports[`GIVEN results WHEN filtering by Broadband AND Speed 52MB THEN 1 result 
       </tbody>
     </table>
   </div>
+  <div
+    className="menu-icon"
+    onClick={[Function]}
+  >
+    <svg
+      height="32px"
+      version="1.1"
+      viewBox="0 0 32 32"
+      width="32px"
+      xmlSpace="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+      />
+    </svg>
+  </div>
+  <div
+    className="list"
+  >
+    To Do. Implement the list display for the Mobile View.
+  </div>
 </div>
 `;
 
 exports[`GIVEN results WHEN filtering by Broadband AND Tv THEN show the 2 deals for broadband and Tv only 1`] = `
 <div
+  id="#main"
   style={
     Object {
       "display": "flex",
@@ -371,14 +408,7 @@ exports[`GIVEN results WHEN filtering by Broadband AND Tv THEN show the 2 deals 
   }
 >
   <div
-    style={
-      Object {
-        "backgroundColor": "#dedede",
-        "flexBasis": "175px",
-        "flexShrink": "0",
-        "height": "100%",
-      }
-    }
+    className="filter-panel"
   >
     <ul>
       <li>
@@ -444,6 +474,7 @@ exports[`GIVEN results WHEN filtering by Broadband AND Tv THEN show the 2 deals 
     </div>
   </div>
   <div
+    className="grid"
     style={
       Object {
         "flexGrow": "1",
@@ -451,7 +482,7 @@ exports[`GIVEN results WHEN filtering by Broadband AND Tv THEN show the 2 deals 
     }
   >
     <table
-      id="grid-deals"
+      className="grid-deals"
       style={
         Object {
           "width": "100%",
@@ -627,11 +658,35 @@ exports[`GIVEN results WHEN filtering by Broadband AND Tv THEN show the 2 deals 
       </tbody>
     </table>
   </div>
+  <div
+    className="menu-icon"
+    onClick={[Function]}
+  >
+    <svg
+      height="32px"
+      version="1.1"
+      viewBox="0 0 32 32"
+      width="32px"
+      xmlSpace="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+      />
+    </svg>
+  </div>
+  <div
+    className="list"
+  >
+    To Do. Implement the list display for the Mobile View.
+  </div>
 </div>
 `;
 
 exports[`GIVEN results WHEN filtering by Broadband THEN show the 3 broadband only deals 1`] = `
 <div
+  id="#main"
   style={
     Object {
       "display": "flex",
@@ -641,14 +696,7 @@ exports[`GIVEN results WHEN filtering by Broadband THEN show the 3 broadband onl
   }
 >
   <div
-    style={
-      Object {
-        "backgroundColor": "#dedede",
-        "flexBasis": "175px",
-        "flexShrink": "0",
-        "height": "100%",
-      }
-    }
+    className="filter-panel"
   >
     <ul>
       <li>
@@ -714,6 +762,7 @@ exports[`GIVEN results WHEN filtering by Broadband THEN show the 3 broadband onl
     </div>
   </div>
   <div
+    className="grid"
     style={
       Object {
         "flexGrow": "1",
@@ -721,7 +770,7 @@ exports[`GIVEN results WHEN filtering by Broadband THEN show the 3 broadband onl
     }
   >
     <table
-      id="grid-deals"
+      className="grid-deals"
       style={
         Object {
           "width": "100%",
@@ -892,11 +941,35 @@ exports[`GIVEN results WHEN filtering by Broadband THEN show the 3 broadband onl
       </tbody>
     </table>
   </div>
+  <div
+    className="menu-icon"
+    onClick={[Function]}
+  >
+    <svg
+      height="32px"
+      version="1.1"
+      viewBox="0 0 32 32"
+      width="32px"
+      xmlSpace="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+      />
+    </svg>
+  </div>
+  <div
+    className="list"
+  >
+    To Do. Implement the list display for the Mobile View.
+  </div>
 </div>
 `;
 
 exports[`GIVEN results WHEN filtering by Mobile, Broadband, TV selected AND Mobile Data 5GB THEN 0 results 1`] = `
 <div
+  id="#main"
   style={
     Object {
       "display": "flex",
@@ -906,14 +979,7 @@ exports[`GIVEN results WHEN filtering by Mobile, Broadband, TV selected AND Mobi
   }
 >
   <div
-    style={
-      Object {
-        "backgroundColor": "#dedede",
-        "flexBasis": "175px",
-        "flexShrink": "0",
-        "height": "100%",
-      }
-    }
+    className="filter-panel"
   >
     <ul>
       <li>
@@ -979,6 +1045,7 @@ exports[`GIVEN results WHEN filtering by Mobile, Broadband, TV selected AND Mobi
     </div>
   </div>
   <div
+    className="grid"
     style={
       Object {
         "flexGrow": "1",
@@ -986,7 +1053,7 @@ exports[`GIVEN results WHEN filtering by Mobile, Broadband, TV selected AND Mobi
     }
   >
     <table
-      id="grid-deals"
+      className="grid-deals"
       style={
         Object {
           "width": "100%",
@@ -1020,6 +1087,29 @@ exports[`GIVEN results WHEN filtering by Mobile, Broadband, TV selected AND Mobi
       </thead>
       <tbody />
     </table>
+  </div>
+  <div
+    className="menu-icon"
+    onClick={[Function]}
+  >
+    <svg
+      height="32px"
+      version="1.1"
+      viewBox="0 0 32 32"
+      width="32px"
+      xmlSpace="preserve"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+      />
+    </svg>
+  </div>
+  <div
+    className="list"
+  >
+    To Do. Implement the list display for the Mobile View.
   </div>
 </div>
 `;

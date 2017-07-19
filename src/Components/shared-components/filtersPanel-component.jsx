@@ -9,7 +9,7 @@ export default class FiltersPanel extends React.Component {
 
     render() {
         return (
-            <div style={Object.assign({}, { height: '100%' },  this.props.style)}>
+            <div className="filter-panel">
                 <ul>
                     <li>
                         <input type="checkbox" defaultChecked onChange={this.props.handleBroadbandChange} />
